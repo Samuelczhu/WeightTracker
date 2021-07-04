@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/settings"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_add_record"
+        android:title="@string/add_record"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_analyze_record"
+        android:title="@string/analyze_record"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_clear_all"
+        android:title="@string/clear_all"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_help"
+        android:title="@string/help"
+        android:icon="@drawable/ic_help"
+        app:showAsAction="ifRoom"/>
+</menu>
