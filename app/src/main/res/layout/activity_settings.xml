@@ -1,267 +1,274 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsActivity"
-    android:background="@color/design_default_color_primary_dark">
+    android:background="@color/design_default_color_primary_dark"
+    tools:context=".SettingsActivity">
 
-    <TextView
-        android:id="@+id/tv_general_settings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/general_settings"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tv_settings_birthdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/date_of_birth"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_settings_birthDate"
-        app:layout_constraintEnd_toStartOf="@+id/btn_settings_birthDate"
-        app:layout_constraintTop_toTopOf="@+id/btn_settings_birthDate" />
+        <TextView
+            android:id="@+id/tv_general_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/general_settings"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_settings_birthDate"
-        style="?android:spinnerStyle"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:drawableEnd="@drawable/ic_date"
-        android:drawableRight="@drawable/ic_date"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_general_settings"
-        tools:text="01/01/2021" />
+        <TextView
+            android:id="@+id/tv_settings_birthdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/date_of_birth"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_settings_birthDate"
+            app:layout_constraintEnd_toStartOf="@+id/btn_settings_birthDate"
+            app:layout_constraintTop_toTopOf="@+id/btn_settings_birthDate" />
 
-    <TextView
-        android:id="@+id/tv_settings_height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/height"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/et_settings_height"
-        app:layout_constraintEnd_toStartOf="@+id/et_settings_height"
-        app:layout_constraintTop_toTopOf="@+id/et_settings_height" />
+        <Button
+            android:id="@+id/btn_settings_birthDate"
+            style="?android:spinnerStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:drawableEnd="@drawable/ic_date"
+            android:drawableRight="@drawable/ic_date"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_general_settings"
+            tools:text="01/01/2021" />
 
-    <EditText
-        android:id="@+id/et_settings_height"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:ems="10"
-        android:inputType="numberSigned"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/tv_settings_height_unit"
-        app:layout_constraintStart_toStartOf="@+id/btn_settings_birthDate"
-        app:layout_constraintTop_toBottomOf="@+id/btn_settings_birthDate" />
+        <TextView
+            android:id="@+id/tv_settings_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/height"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_settings_height"
+            app:layout_constraintEnd_toStartOf="@+id/et_settings_height"
+            app:layout_constraintTop_toTopOf="@+id/et_settings_height" />
 
-    <Spinner
-        android:id="@+id/spinner_settings_gender"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:drawSelectorOnTop="true"
-        android:popupBackground="@color/design_default_color_primary_dark"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="@+id/tv_settings_height_unit"
-        app:layout_constraintStart_toStartOf="@+id/et_settings_height"
-        app:layout_constraintTop_toBottomOf="@+id/et_settings_height" />
+        <EditText
+            android:id="@+id/et_settings_height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/tv_settings_height_unit"
+            app:layout_constraintStart_toStartOf="@+id/btn_settings_birthDate"
+            app:layout_constraintTop_toBottomOf="@+id/btn_settings_birthDate" />
 
-    <TextView
-        android:id="@+id/tv_settings_gender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/gender"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner_settings_gender"
-        app:layout_constraintEnd_toStartOf="@+id/spinner_settings_gender"
-        app:layout_constraintTop_toTopOf="@+id/spinner_settings_gender" />
+        <Spinner
+            android:id="@+id/spinner_settings_gender"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@color/design_default_color_primary_dark"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="@+id/tv_settings_height_unit"
+            app:layout_constraintStart_toStartOf="@+id/et_settings_height"
+            app:layout_constraintTop_toBottomOf="@+id/et_settings_height" />
 
-    <TextView
-        android:id="@+id/tv_settings_height_unit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="cm"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/et_settings_height"
-        app:layout_constraintEnd_toEndOf="@+id/btn_settings_birthDate"
-        app:layout_constraintTop_toTopOf="@+id/et_settings_height" />
+        <TextView
+            android:id="@+id/tv_settings_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/gender"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner_settings_gender"
+            app:layout_constraintEnd_toStartOf="@+id/spinner_settings_gender"
+            app:layout_constraintTop_toTopOf="@+id/spinner_settings_gender" />
 
-    <EditText
-        android:id="@+id/et_settings_goalWeight"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/tv_settings_goalWeight_unit"
-        app:layout_constraintStart_toStartOf="@+id/spinner_settings_gender"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_settings_gender" />
+        <TextView
+            android:id="@+id/tv_settings_height_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_settings_height"
+            app:layout_constraintEnd_toEndOf="@+id/btn_settings_birthDate"
+            app:layout_constraintTop_toTopOf="@+id/et_settings_height" />
 
-    <TextView
-        android:id="@+id/tv_settings_goalWeight_unit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="KG"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/et_settings_goalWeight"
-        app:layout_constraintEnd_toEndOf="@+id/spinner_settings_gender"
-        app:layout_constraintTop_toTopOf="@+id/et_settings_goalWeight" />
+        <EditText
+            android:id="@+id/et_settings_goalWeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/tv_settings_goalWeight_unit"
+            app:layout_constraintStart_toStartOf="@+id/spinner_settings_gender"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_settings_gender" />
 
-    <TextView
-        android:id="@+id/tv_settings_goalWeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/goal_weight"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/et_settings_goalWeight"
-        app:layout_constraintEnd_toStartOf="@+id/et_settings_goalWeight"
-        app:layout_constraintTop_toTopOf="@+id/et_settings_goalWeight" />
+        <TextView
+            android:id="@+id/tv_settings_goalWeight_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KG"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_settings_goalWeight"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_settings_gender"
+            app:layout_constraintTop_toTopOf="@+id/et_settings_goalWeight" />
 
-    <TextView
-        android:id="@+id/tv_settings_BMI_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="BMI:"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_settings_BMI"
-        app:layout_constraintEnd_toStartOf="@+id/tv_settings_BMI"
-        app:layout_constraintTop_toTopOf="@+id/tv_settings_BMI" />
+        <TextView
+            android:id="@+id/tv_settings_goalWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/goal_weight"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_settings_goalWeight"
+            app:layout_constraintEnd_toStartOf="@+id/et_settings_goalWeight"
+            app:layout_constraintTop_toTopOf="@+id/et_settings_goalWeight" />
 
-    <TextView
-        android:id="@+id/tv_settings_BMI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="@+id/et_settings_goalWeight"
-        app:layout_constraintTop_toBottomOf="@+id/et_settings_goalWeight"
-        tools:text="20.56" />
+        <TextView
+            android:id="@+id/tv_settings_BMI_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="BMI:"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_settings_BMI"
+            app:layout_constraintEnd_toStartOf="@+id/tv_settings_BMI"
+            app:layout_constraintTop_toTopOf="@+id/tv_settings_BMI" />
 
-    <TextView
-        android:id="@+id/tv_analysis_settings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/analysis_settings"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_settings_BMI" />
+        <TextView
+            android:id="@+id/tv_settings_BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/et_settings_goalWeight"
+            app:layout_constraintTop_toBottomOf="@+id/et_settings_goalWeight"
+            tools:text="20.56" />
 
-    <Spinner
-        android:id="@+id/spinner_settings_best_fit_type"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:drawSelectorOnTop="true"
-        android:popupBackground="@color/design_default_color_primary_dark"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="@+id/tv_settings_goalWeight_unit"
-        app:layout_constraintStart_toStartOf="@+id/et_settings_goalWeight"
-        app:layout_constraintTop_toBottomOf="@+id/tv_analysis_settings" />
+        <TextView
+            android:id="@+id/tv_analysis_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/analysis_settings"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_settings_BMI" />
 
-    <TextView
-        android:id="@+id/tv_best_fit_type"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/best_fit_type"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner_settings_best_fit_type"
-        app:layout_constraintEnd_toStartOf="@+id/spinner_settings_best_fit_type"
-        app:layout_constraintTop_toTopOf="@+id/spinner_settings_best_fit_type" />
+        <Spinner
+            android:id="@+id/spinner_settings_best_fit_type"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@color/design_default_color_primary_dark"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="@+id/tv_settings_goalWeight_unit"
+            app:layout_constraintStart_toStartOf="@+id/et_settings_goalWeight"
+            app:layout_constraintTop_toBottomOf="@+id/tv_analysis_settings" />
 
-    <Spinner
-        android:id="@+id/spinner_settings_best_fit_order"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:drawSelectorOnTop="true"
-        android:popupBackground="@color/design_default_color_primary_dark"
-        android:spinnerMode="dropdown"
-        android:visibility="invisible"
-        android:clickable="false"
-        app:layout_constraintEnd_toEndOf="@+id/spinner_settings_best_fit_type"
-        app:layout_constraintStart_toStartOf="@+id/spinner_settings_best_fit_type"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_settings_best_fit_type" />
+        <TextView
+            android:id="@+id/tv_best_fit_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/best_fit_type"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner_settings_best_fit_type"
+            app:layout_constraintEnd_toStartOf="@+id/spinner_settings_best_fit_type"
+            app:layout_constraintTop_toTopOf="@+id/spinner_settings_best_fit_type" />
 
-    <TextView
-        android:id="@+id/tv_best_fit_order"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/best_fit_order"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner_settings_best_fit_order"
-        app:layout_constraintEnd_toStartOf="@+id/spinner_settings_best_fit_order"
-        app:layout_constraintTop_toTopOf="@+id/spinner_settings_best_fit_order" />
+        <Spinner
+            android:id="@+id/spinner_settings_best_fit_order"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:clickable="false"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@color/design_default_color_primary_dark"
+            android:spinnerMode="dropdown"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_settings_best_fit_type"
+            app:layout_constraintStart_toStartOf="@+id/spinner_settings_best_fit_type"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_settings_best_fit_type" />
 
-    <Button
-        android:id="@+id/btn_settings_save"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@color/green"
-        android:text="@string/save"
-        app:layout_constraintEnd_toStartOf="@+id/btn_settings_cancel"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_settings_best_fit_order" />
+        <TextView
+            android:id="@+id/tv_best_fit_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/best_fit_order"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner_settings_best_fit_order"
+            app:layout_constraintEnd_toStartOf="@+id/spinner_settings_best_fit_order"
+            app:layout_constraintTop_toTopOf="@+id/spinner_settings_best_fit_order" />
 
-    <Button
-        android:id="@+id/btn_settings_cancel"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:text="@string/cancel"
-        android:backgroundTint="@color/orange"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_settings_save"
-        app:layout_constraintTop_toTopOf="@+id/btn_settings_save" />
+        <Button
+            android:id="@+id/btn_settings_save"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/green"
+            android:text="@string/save"
+            app:layout_constraintEnd_toStartOf="@+id/btn_settings_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_settings_best_fit_order" />
+
+        <Button
+            android:id="@+id/btn_settings_cancel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_settings_save"
+            app:layout_constraintTop_toTopOf="@+id/btn_settings_save" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

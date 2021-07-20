@@ -1,251 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecordActivity"
-    android:background="@color/design_default_color_primary_dark">
+    android:background="@color/design_default_color_primary_dark"
+    tools:context=".RecordActivity">
 
-    <Button
-        android:id="@+id/btn_record_date"
-        style="?android:spinnerStyle"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:drawableEnd="@drawable/ic_date"
-        android:drawableRight="@drawable/ic_date"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="01/01/2021" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tv_record_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/record_date"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_record_date"
-        app:layout_constraintEnd_toStartOf="@+id/btn_record_date"
-        app:layout_constraintTop_toTopOf="@+id/btn_record_date" />
+        <Button
+            android:id="@+id/btn_record_date"
+            style="?android:spinnerStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:drawableEnd="@drawable/ic_date"
+            android:drawableRight="@drawable/ic_date"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="01/01/2021" />
 
-    <Button
-        android:id="@+id/btn_record_time"
-        style="?android:spinnerStyle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:drawableEnd="@drawable/ic_time"
-        android:drawableRight="@drawable/ic_time"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_record_date"
-        app:layout_constraintStart_toStartOf="@+id/btn_record_date"
-        app:layout_constraintTop_toBottomOf="@+id/btn_record_date"
-        tools:text="18:56" />
+        <TextView
+            android:id="@+id/tv_record_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/record_date"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_record_date"
+            app:layout_constraintEnd_toStartOf="@+id/btn_record_date"
+            app:layout_constraintTop_toTopOf="@+id/btn_record_date" />
 
-    <TextView
-        android:id="@+id/tv_record_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/record_time"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_record_time"
-        app:layout_constraintEnd_toStartOf="@+id/btn_record_time"
-        app:layout_constraintTop_toTopOf="@+id/btn_record_time" />
+        <Button
+            android:id="@+id/btn_record_time"
+            style="?android:spinnerStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_time"
+            android:drawableRight="@drawable/ic_time"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_record_date"
+            app:layout_constraintStart_toStartOf="@+id/btn_record_date"
+            app:layout_constraintTop_toBottomOf="@+id/btn_record_date"
+            tools:text="18:56" />
 
-    <TextView
-        android:id="@+id/tv_record_height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/height"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/et_record_height"
-        app:layout_constraintEnd_toStartOf="@+id/et_record_height"
-        app:layout_constraintTop_toTopOf="@+id/et_record_height" />
+        <TextView
+            android:id="@+id/tv_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/record_time"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_record_time"
+            app:layout_constraintEnd_toStartOf="@+id/btn_record_time"
+            app:layout_constraintTop_toTopOf="@+id/btn_record_time" />
 
-    <EditText
-        android:id="@+id/et_record_height"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/tv_record_heightUnit"
-        app:layout_constraintStart_toStartOf="@+id/btn_record_time"
-        app:layout_constraintTop_toBottomOf="@+id/btn_record_time" />
+        <TextView
+            android:id="@+id/tv_record_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/height"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_record_height"
+            app:layout_constraintEnd_toStartOf="@+id/et_record_height"
+            app:layout_constraintTop_toTopOf="@+id/et_record_height" />
 
-    <TextView
-        android:id="@+id/tv_record_heightUnit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="cm"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/et_record_height"
-        app:layout_constraintEnd_toEndOf="@+id/btn_record_time"
-        app:layout_constraintTop_toTopOf="@+id/et_record_height" />
+        <EditText
+            android:id="@+id/et_record_height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/tv_record_heightUnit"
+            app:layout_constraintStart_toStartOf="@+id/btn_record_time"
+            app:layout_constraintTop_toBottomOf="@+id/btn_record_time" />
 
-    <TextView
-        android:id="@+id/tv_record_weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/weight"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/et_record_weight"
-        app:layout_constraintEnd_toStartOf="@+id/et_record_weight"
-        app:layout_constraintTop_toTopOf="@+id/et_record_weight" />
+        <TextView
+            android:id="@+id/tv_record_heightUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_record_height"
+            app:layout_constraintEnd_toEndOf="@+id/btn_record_time"
+            app:layout_constraintTop_toTopOf="@+id/et_record_height" />
 
-
-    <EditText
-        android:id="@+id/et_record_weight"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:ems="10"
-        android:textColor="@color/white"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toStartOf="@+id/tv_record_weightUnit"
-        app:layout_constraintStart_toStartOf="@+id/et_record_height"
-        app:layout_constraintTop_toBottomOf="@+id/et_record_height" />
-
-    <TextView
-        android:id="@+id/tv_record_weightUnit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="KG"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/et_record_weight"
-        app:layout_constraintEnd_toEndOf="@+id/tv_record_heightUnit"
-        app:layout_constraintTop_toTopOf="@+id/et_record_weight" />
-
-    <TextView
-        android:id="@+id/tv_record_comment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/comment"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_record_weight" />
-
-    <EditText
-        android:id="@+id/et_record_comment"
-        android:background="@drawable/edit_text_border"
-        android:padding="12dp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:lines="3"
-        android:scrollbars="vertical"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_record_comment"
-        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non enim dapibus, luctus urna a, dictum tellus. Vivamus vel dignissim massa. Nam condimentum ultricies dui, eget vulputate nibh lobortis vitae. Mauris placerat tempor ex eu venenatis. Aenean tortor nibh, dictum nec malesuada eget, tempus vitae risus. Vestibulum aliquam pharetra leo, vel lacinia enim feugiat vitae. Suspendisse sit amet arcu elementum, lacinia tortor sit amet, varius tellus. Donec porta odio eu consectetur sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan id quam quis pharetra. Nulla faucibus quam neque, sed fermentum enim mattis id. Maecenas cursus tellus sit amet pretium commodo." />
-
-    <TextView
-        android:id="@+id/tv_record_description1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/record_description1"
-        android:visibility="invisible"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/et_record_comment"
-        app:layout_constraintTop_toBottomOf="@+id/et_record_comment" />
-
-    <TextView
-        android:id="@+id/tv_record_description2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:visibility="invisible"
-        android:text="@string/record_description2"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_record_description1"
-        app:layout_constraintTop_toBottomOf="@+id/tv_record_description1" />
-
-    <TextView
-        android:id="@+id/tv_record_description3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/record_description3"
-        android:visibility="invisible"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_record_description2"
-        app:layout_constraintTop_toBottomOf="@+id/tv_record_description2" />
-
-    <Button
-        android:id="@+id/btn_record_save"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@color/green"
-        android:text="@string/save"
-        app:layout_constraintEnd_toStartOf="@+id/btn_record_cancel"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_record_description3" />
-
-    <Button
-        android:id="@+id/btn_record_cancel"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:text="@string/cancel"
-        android:backgroundTint="@color/orange"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_record_save"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_record_save"
-        app:layout_constraintTop_toTopOf="@+id/btn_record_save" />
-
-    <Button
-        android:id="@+id/btn_record_delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/cardview_dark_background"
-        android:text="@string/delete_record"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="@+id/btn_record_cancel"
-        app:layout_constraintStart_toStartOf="@+id/btn_record_save"
-        app:layout_constraintTop_toBottomOf="@+id/btn_record_save" />
+        <TextView
+            android:id="@+id/tv_record_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/weight"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_record_weight"
+            app:layout_constraintEnd_toStartOf="@+id/et_record_weight"
+            app:layout_constraintTop_toTopOf="@+id/et_record_weight" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/et_record_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/tv_record_weightUnit"
+            app:layout_constraintStart_toStartOf="@+id/et_record_height"
+            app:layout_constraintTop_toBottomOf="@+id/et_record_height" />
+
+        <TextView
+            android:id="@+id/tv_record_weightUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KG"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_record_weight"
+            app:layout_constraintEnd_toEndOf="@+id/tv_record_heightUnit"
+            app:layout_constraintTop_toTopOf="@+id/et_record_weight" />
+
+        <TextView
+            android:id="@+id/tv_record_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/comment"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_record_weight" />
+
+        <EditText
+            android:id="@+id/et_record_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:padding="12dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_record_comment"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non enim dapibus, luctus urna a, dictum tellus. Vivamus vel dignissim massa. Nam condimentum ultricies dui, eget vulputate nibh lobortis vitae. Mauris placerat tempor ex eu venenatis. Aenean tortor nibh, dictum nec malesuada eget, tempus vitae risus. Vestibulum aliquam pharetra leo, vel lacinia enim feugiat vitae. Suspendisse sit amet arcu elementum, lacinia tortor sit amet, varius tellus. Donec porta odio eu consectetur sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan id quam quis pharetra. Nulla faucibus quam neque, sed fermentum enim mattis id. Maecenas cursus tellus sit amet pretium commodo." />
+
+        <TextView
+            android:id="@+id/tv_record_description1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/record_description1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/et_record_comment"
+            app:layout_constraintTop_toBottomOf="@+id/et_record_comment" />
+
+        <TextView
+            android:id="@+id/tv_record_description2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/record_description2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/tv_record_description1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_record_description1" />
+
+        <TextView
+            android:id="@+id/tv_record_description3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/record_description3"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/tv_record_description2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_record_description2" />
+
+        <Button
+            android:id="@+id/btn_record_save"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/green"
+            android:text="@string/save"
+            app:layout_constraintEnd_toStartOf="@+id/btn_record_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_record_description3" />
+
+        <Button
+            android:id="@+id/btn_record_cancel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/cancel"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_record_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_record_save"
+            app:layout_constraintTop_toTopOf="@+id/btn_record_save" />
+
+        <Button
+            android:id="@+id/btn_record_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:text="@string/delete_record"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/btn_record_cancel"
+            app:layout_constraintStart_toStartOf="@+id/btn_record_save"
+            app:layout_constraintTop_toBottomOf="@+id/btn_record_save" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

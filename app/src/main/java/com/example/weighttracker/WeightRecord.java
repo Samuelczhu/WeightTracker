@@ -122,7 +122,7 @@ public class WeightRecord implements Serializable {
         //Create a helper date object
         Date dateTime = new java.util.Date(this.timestamp);
         //Create a date formatter
-        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
         //Format and return the date string
         return dateFormat.format(dateTime);
     }
